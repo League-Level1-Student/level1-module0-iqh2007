@@ -51,24 +51,90 @@ public class BodyPartQuiz {
 	private void startQuiz() {
 
 		// 1. Make an int variable to hold the score.
+		
+		int score = 0;
 
 		// 2. Set the size of the window in the initializeGui() method 
 
 		// 4. Ask the user who this person is and store their answer
-		String guess = JOptionPane.showInputDialog("who is this?");
-
+		
 		// 5. Check their answer. If they guessed correctly:
+		
 		// -- Tell them they are right and increase the score by 1
 
 		// 6. Otherwise:
+		
 		// -- Tell them they are wrong and who the person is
 
 		// 7. Use the showNextImage() method below to get the next image
-		showNextImage();
 
 		// 8. .... repeat 4-7 for all your images.....
 
 		// 9. Show them their current score
+		
+		String guess = JOptionPane.showInputDialog("who is this?");
+		if( guess.contentEquals("arnold")) {
+			JOptionPane.showMessageDialog(null, "correct!");
+			score+=1;
+			JOptionPane.showMessageDialog(null, "score" + score);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "wrong!");
+			JOptionPane.showMessageDialog(null, "This person is arnold.");
+			score-=1;
+			JOptionPane.showMessageDialog(null, "score "+ score);
+		}
+		showNextImage();
+		
+		String guess2 = JOptionPane.showInputDialog("who is this?");
+		if( guess2.contentEquals("leonardo")) {
+			JOptionPane.showMessageDialog(null, "correct!");
+			score+=1;
+			JOptionPane.showMessageDialog(null, "score" + score);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "wrong!");
+			JOptionPane.showMessageDialog(null, "This person is leonardo.");
+			score-=1;
+			JOptionPane.showMessageDialog(null, "score "+ score);
+			}
+		showNextImage();
+		
+		String guess3 = JOptionPane.showInputDialog("who is this?");
+		if( guess3.contentEquals("morgan")) {
+			JOptionPane.showMessageDialog(null, "correct!");
+			score+=1;
+			JOptionPane.showMessageDialog(null, "score" + score);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "wrong!");
+			JOptionPane.showMessageDialog(null, "This person is morgan.");
+			score-=1;
+			JOptionPane.showMessageDialog(null, "score "+ score);
+			}
+		showNextImage();
+		
+		String guess4 = JOptionPane.showInputDialog("who is this?");
+		if( guess4.contentEquals("jack")) {
+			JOptionPane.showMessageDialog(null, "correct!");
+			score+=1;
+			JOptionPane.showMessageDialog(null, "score" + score);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "wrong!");
+			JOptionPane.showMessageDialog(null, "This person is jack.");
+			score-=1;
+			JOptionPane.showMessageDialog(null, "score "+ score);
+			}
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 
